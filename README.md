@@ -18,7 +18,7 @@ Scans model space for collinear, overlapping line segments. Overlapping lines ca
 Place `DUSTY_CP` marker blocks interactively with name and description attributes, then export them as a Dusty-standard CSV file (Point Name, X, Y, Z, Description).
 
 ### Layer Visibility (`DUSTYLAYERS`)
-Quick on/off toggle panel for all layers in the current drawing — useful for isolating what gets printed.
+Quick on/off toggle panel for all layers in the current drawing, useful for isolating what gets printed.
 
 ---
 
@@ -32,8 +32,10 @@ Quick on/off toggle panel for all layers in the current drawing — useful for i
 
 ## Build
 
-1. Clone the repo.
-2. Open a terminal in the repo root.
+> **Note:** If you downloaded the zip from GitHub, the files extract into a nested folder (`DustyAutoCAD-main\DustyAutoCAD-main`). Run all commands from the inner folder where `DustyAutoCAD.csproj` lives.
+
+1. Clone or download the repo.
+2. Open a terminal in the folder containing `DustyAutoCAD.csproj`.
 3. Build for Release:
 
 ```
@@ -62,10 +64,10 @@ This copies `DustyAutoCAD.dll` into your AutoCAD bundle folder (`%APPDATA%\Autod
 
 ## License
 
-MIT License — see [LICENSE](LICENSE).
+MIT License. See [LICENSE](LICENSE).
 
 ---
 
 ## About
 
-Made by [BIM One](https://bimone.com) — official [Dusty Robotics partner](https://www.dustyrobotics.com/partners).
+Made by [BIM One](https://bimone.com), official [Dusty Robotics partner](https://www.dustyrobotics.com/partners).

@@ -60,7 +60,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 
 This copies `DustyAutoCAD.dll` into your AutoCAD bundle folder (`%APPDATA%\Autodesk\ApplicationPlugins\DustyAutoCAD.bundle`) and creates `PackageContents.xml` if it does not exist. Restart AutoCAD to load the add-in.
 
-> **Note:** The `-ExecutionPolicy Bypass` flag is required on most Windows machines where script execution is restricted. It applies only to this single command and does not change any system settings.
+> **Note:** Windows blocks unsigned scripts downloaded from the internet by default. The `-ExecutionPolicy Bypass` flag tells Windows to run this specific script anyway. It applies only to this one command and does not change any system-wide settings or disable any other security features.
 
 ---
 

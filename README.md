@@ -52,13 +52,15 @@ dotnet build -c Release -p:AutoCADInstallDir="C:\Program Files\Autodesk\AutoCAD 
 
 ## Install
 
-After building, run the install script (PowerShell) from the repo root:
+After building, run the install script from the folder containing `install.ps1`:
 
 ```powershell
-.\install.ps1
+powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 
 This copies `DustyAutoCAD.dll` into your AutoCAD bundle folder (`%APPDATA%\Autodesk\ApplicationPlugins\DustyAutoCAD.bundle`) and creates `PackageContents.xml` if it does not exist. Restart AutoCAD to load the add-in.
+
+> **Note:** The `-ExecutionPolicy Bypass` flag is required on most Windows machines where script execution is restricted. It applies only to this single command and does not change any system settings.
 
 ---
 
